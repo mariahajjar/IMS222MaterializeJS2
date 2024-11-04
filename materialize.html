@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Materialize With Maria</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+      </head>
+    
+    <body>
+        <header>
+    
+            <div class = "navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Coffee</a>
+                <a href="content.html">Social Media's Impact</a>
+                <a href="materialize.html">Materialize</a>
+            </div>
+            
+            </header>
+           <!-- Text and Background -->
+   <div class="container">
+    <h4 class="center-align">Welcome to Maria's Golden Arabica Cafe</h4>
+    <p class="flow-text">Maria's cafe includes limited-time items and great deals.</p>
+</div>
+
+
+<!-- Menu -->
+<div class="container">
+    <h4>Menu</h4>
+   <a href="https://unsplash.com/s/photos/latte" class="waves-effect waves-light btn">Lattes</a>
+    <a href="https://unsplash.com/s/photos/turkish-coffee" class="waves-effect waves-light btn-large">Turkish Coffee</a>
+</div>
+
+
+<!-- Cards -->
+<div class="container">
+    <h4>Traditional Turkish Treat in a Teacup</h4>
+    <div class="card">
+        <div class="card-image">
+            <img src="Images/Cup of Coffee.JPG" alt="Sweets">
+            <span class="card-title">Vegan and Vegetarian Sweets (Below)</span>
+        </div>
+        <div class="card-content">
+            <p>Enjoy a variety of non-dairy products and alternatives</p>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- Tables -->
+<div class="container">
+    <h4>Menu Board</h4>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cafe du Lait</td>
+                <td>Coffee with Milk or Almondmilk</td>
+                <td>$4.75</td>
+            </tr>
+            <tr>
+                <td>Turkish Coffee</td>
+                <td>Arabica Coffee Grounds</td>
+                <td>$3.75</td>
+            </tr>
+            <tr>
+                <td>Traditional Latte</td>
+                <td>Latte</td>
+                <td>$3.50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Deals -->
+<div class="container">
+    <h4>Limited-Time Offers</h4>
+    <div class="card-panel teal lighten-2">
+        <span class="white-text">Pumpkin Spice Latte, Caramel Vanilla Latte (With regular or vegan milk).</span>
+    </div>
+</div>
+
+
+<!-- Images -->
+<div class="container">
+    <h4>Our Delights: Vegan and Vegetarian Sweets</h4>
+    <div class="row">
+        <div class="col s12 m6">
+            <img src="Images/MariaSweets.JPG" alt="Treat1" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 m6">
+            <img src="Images/MariaSweets2.JPG" alt="Treat2" class="responsive-img materialboxed">
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /* Optional: Adjust the carousel image size for a better appearance */
+    .carousel .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+<div class="carousel">
+<a class="carousel-item" href="#one!"><img src="Images/Brownies.JPG" alt="Nature 1"></a>
+<a class="carousel-item" href="#two!"><img src="Images/BirthdayCake.JPG" alt="Nature 2"></a>
+<a class="carousel-item" href="#three!"><img src="Images/AnotherCake.JPG" alt="Nature 3"></a>
+</div>
+
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Initialize Carousel -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, {
+    // Add options here if needed
+    duration: 200, // Speed of the transition (in ms)
+    shift: 0,      // Horizontal shift of each item
+    dist: -100,    // Distance between the items in the carousel
+    padding: 10,   // Padding between non-active items
+    numVisible: 5, // Number of visible items at once
+    indicators: true // Dots below the carousel for each item
+  });
+});
+</script>
+ 
+<div class="container">
+    <h4>Our Specials</h4>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">Special 1</i></div>
+            <div class="collapsible-body"><span>Our brownies made with real chocolate/cocoa!</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">Special 2</i></div>
+            <div class="collapsible-body"><span>Happy Birthday! Get a free birthday cake on your birthday.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">Special 3</i></div>
+            <div class="collapsible-body"><span>Another cake: enjoy half the price on weekends.</span></div>
+        </li>
+    </ul>
+</div>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+    });
+</script>
+
+    </body>
+</html>
